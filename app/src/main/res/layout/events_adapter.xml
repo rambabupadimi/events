@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="0dp"
+        card_view:contentPadding="10dp"
+        card_view:cardElevation="2dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:id="@+id/cardview"
+>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        >
+        <com.firebase.events.ResizableImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/default_user_men_icon"
+            android:id="@+id/website_image"
+            android:minHeight="64dp"
+            android:layout_margin="6dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Topper Android"
+            android:textSize="16sp"
+            android:id="@+id/website_name"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ddd"
+        android:layout_margin="6dp"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        android:id="@+id/website_category"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_gravity="left|center_vertical"/>
+
+       <!--
+       <ImageButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/star"
+           android:layout_gravity="right"
+           android:tint="@color/colorPrimary"
+           android:layout_marginRight="6dp"
+           android:background="@drawable/star"
+           android:id="@+id/star"/>
+-->
+        <ToggleButton
+            android:id="@+id/star"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="right"
+            style="@style/toggleButton"
+            android:background="@drawable/ic_toggle_bg"/>
+
+    </LinearLayout>
+</LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

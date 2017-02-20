@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="us.eunoia.quickonnect.profilepack.FriendsActivity">
+
+    <item
+        android:id="@+id/search"
+        android:orderInCategory="100"
+        android:icon="@drawable/abc_ic_search_api_mtrl_alpha"
+        android:title="logo"
+        app:showAsAction="always" />
+
+
+</menu>
